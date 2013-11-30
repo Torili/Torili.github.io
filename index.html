@@ -4,6 +4,11 @@ title: Torilis Homepage
 ---
 <p>This is the index page</p>
 <h2>I love kittens</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li><a href="\{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 <blockquote>
   <p>Oh Captain, my Captain</p>
 </blockquote>
